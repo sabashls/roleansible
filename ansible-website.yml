@@ -1,0 +1,6 @@
+- name: Install nginx
+  hosts: "{{hostname}}"
+  sudo: True 
+  
+  roles:
+    - { role: nginx }

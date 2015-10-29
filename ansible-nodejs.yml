@@ -1,0 +1,7 @@
+- name: Install nodejs and github
+  hosts: "{{hostname}}"
+  sudo: True
+  
+  roles:
+      - { role: nodejs }
+      - { role: github }

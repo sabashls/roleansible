@@ -1,0 +1,26 @@
+---
+    - name: install git
+      apt: name=git update_cache=yes state=present
+ 
+    - name: git clone repository
+      git: repo=https://github.com/kumarselvam/node-express.git dest=/home/ravi/node-express
+
+    - name: install forever
+      npm: name=forever global=yes state=present 
+    
+    - name: install npm
+      npm: path=/home/ravi/node-express/
+
+    - name: "Check list of Node.js apps running."
+      command: forever list
+      register: forever_list
+      changed_when: false
+
+    - name: "Start example Node.js app."
+      command: forever start /home/ravi/node-express/server.js
+      when: "forever_list.stdout.find('/home/ravi/node-express/server.js') == -1"
+
+    - name: "restart example Node.js app."
+      command: forever restart /home/ravi/node-express/server.js
+      when: "forever_list.stdout.find('/home/ravi/node-express/server.js') != -1"
+
