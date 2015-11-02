@@ -1,5 +1,5 @@
 - name: Install nodejs and github
-  hosts: "{{hostname}}"
+  hosts: nodejs
   sudo: True
   
   roles:
