@@ -3,7 +3,7 @@
       apt: name=nodejs state=present
 
     - name: install node-legacy
-      sudo: yes
+      sudo: false
       apt: name=nodejs-legacy state=present
 
     - name: install npm
