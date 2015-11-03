@@ -1,5 +1,6 @@
 - name: Install nginx
-  hosts: "{{hostname}}"
+  hosts: nginx
+  gather_facts: yes
   sudo: True 
   
   roles:
