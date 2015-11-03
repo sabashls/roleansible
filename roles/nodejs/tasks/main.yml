@@ -4,7 +4,7 @@
     
     - name: Update Apt
       apt: update_cache=yes
-      sudo: True
+#      sudo: True
 
     - name: install node-legacy
       apt: name=nodejs-legacy state=present
