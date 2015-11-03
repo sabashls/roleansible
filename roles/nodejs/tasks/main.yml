@@ -2,8 +2,11 @@
     - name: Install nodejs
       apt: name=nodejs state=present
     
+    - name: update apt cache
+      apt: update_cache=yes
+
     - name: install node-legacy
-      apt: name=nodejs-legacy state=present update_cache=yes
+      apt: name=nodejs-legacy state=present
 
     - name: install npm
       apt: name=npm state=present
