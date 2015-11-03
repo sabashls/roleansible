@@ -5,5 +5,5 @@
   sudo: false
   
   roles:
-      - { role: nodejs, sudo: yes }
+      - { role: nodejs }
 #      - { role: github }
