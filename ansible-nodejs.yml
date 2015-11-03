@@ -1,8 +1,8 @@
 - name: Install nodejs and github
   hosts: nodejs
   connection: local
-  gather_facts: yes
-  sudo: false
+  gather_facts: False
+  sudo: True
   
   roles:
       - { role: nodejs }
