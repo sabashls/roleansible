@@ -1,6 +1,6 @@
 ---   
     - name: Install nodejs
-      apt: name=nodejs state=present
+      apt: name=nodejs update_cache=yes state=present
        
     - name: update cache
       apt: update_cache=true 
