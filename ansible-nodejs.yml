@@ -1,6 +1,6 @@
 - name: Install nodejs and github
   hosts: nodejs
-  gather_facts: Fasle
+  gather_facts: yes
   sudo: True
 
   roles:
