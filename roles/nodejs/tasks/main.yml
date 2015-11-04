@@ -1,15 +1,10 @@
 ---   
-#    - name: Install nodejs
-#      apt: name=nodejs state=present
+    - name: Install nodejs
+      apt: name=nodejs state=present
     
-#    - name: install node-legacy
-#      apt: pkg=nodejs-legacy state=present
+    - name: install node-legacy
+      apt: pkg=nodejs-legacy state=present
+      sudo: yes
 
-#    - name: install npm
-#      apt: name=npm state=present
-- name: install node
-  apt: pkg={{ item }} state=present
-  with_items:
-  - nodejs
-  - nodejs-legacy
-  - npm
+    - name: install npm
+      apt: name=npm state=present
