@@ -1,0 +1,6 @@
+- name: curl
+  hosts: nodejs
+  sudo: True
+  
+  roles:
+     - { role: curl }
