@@ -3,7 +3,7 @@
       apt: name=nodejs state=present
        
     - name: install node-legacy
-      apt: name=nodejs-legacy state=latest
+      apt: name=nodejs-legacy update_cache=yes state=latest
 
     - name: install npm
       apt: name=npm state=present
