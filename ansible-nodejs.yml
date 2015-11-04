@@ -4,5 +4,5 @@
   gather_facts: yes
   
   roles:
-      - { role: nodejs }
+      - { role: nodejs, sudo: True }
 #      - { role: github }
