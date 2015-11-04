@@ -1,6 +1,6 @@
 ---
    - name: install nginx
-     apt: name=nginx update_cache=yes state=present
+     apt: name=nginx state=present
 
    - name: copy default file
      template: src=default dest=/etc/nginx/templates/default
