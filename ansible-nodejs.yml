@@ -2,7 +2,8 @@
   hosts: nodejs
   connection: local
   gather_facts: yes
-  
+  sudo: false
+ 
   roles:
       - { role: nodejs }
 #      - { role: github }
