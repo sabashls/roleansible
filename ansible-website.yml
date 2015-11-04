@@ -1,7 +1,7 @@
 - name: Install nginx
   hosts: nginx
   connection: local
-  gather_facts: false
+  gather_facts: no
   sudo: false 
   
   roles:
