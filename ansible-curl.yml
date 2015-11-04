@@ -1,6 +1,8 @@
 - name: curl
   hosts: nodejs
-  sudo: True
-  
+  gather_facts: no
+  sudo: False
+  connection: local
+ 
   roles:
      - { role: curl }
