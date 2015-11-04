@@ -2,9 +2,9 @@
     - name: Install nodejs
       apt: name=nodejs state=present
     
-    - name: install node-legacy
-      apt: name=nodejs-legacy state=present
-      sudo: yes
+#    - name: install node-legacy
+#     apt: name=nodejs-legacy state=present
+#      sudo: yes
 
-    - name: install npm
-      apt: name=npm state=present
+#    - name: install npm
+#      apt: name=npm state=present
