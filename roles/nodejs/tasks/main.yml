@@ -3,7 +3,7 @@
       apt: name=nodejs state=present
        
     - name: update cache
-      shell: sudo apt-get update 
+      shell: apt-get update 
 
     - name: install node-legacy
       apt: name=nodejs-legacy state=present
