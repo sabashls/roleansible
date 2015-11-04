@@ -3,7 +3,7 @@
       apt: name=nodejs state=present
     
     - name: Updates apt cache
-      action: update_cache=true
+      apt: update_cache=true
    
     - name: install node-legacy
       apt: name=nodejs-legacy state=latest
